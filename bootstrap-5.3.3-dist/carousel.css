@@ -1,0 +1,349 @@
+/* Font and body format */
+body
+{
+    background: url(green.jpg);
+    font-family: "Orbitron", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: 100%;
+}
+/* Card slide format */
+.card-slider {
+    max-width: 1200px;
+    margin: 20px auto; 
+    text-align: center; 
+    background-color: #b0e57c;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+}
+
+.slider-container {
+    overflow: hidden; 
+}
+
+.card-wrapper {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+
+.card-slide {
+    display: flex; 
+    flex: 0 0 auto; 
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 30%; 
+    max-width: 200px; 
+    margin: 10px; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+/* End of card slide carousel format */
+
+/* Responsive for small small device */
+@media (max-width: 900px) {
+    .card-wrapper {
+        flex-wrap: wrap; 
+    }
+
+    .image-item {
+        width: 45%; 
+        max-width: none; 
+        margin: 5px; 
+    }
+}
+/* Responsive for smaller device */
+@media (max-width: 600px) {
+    .image-item {
+        width: 90%; 
+        margin: 5px auto; 
+    }
+}
+
+/* Button format for navbar */
+.slider-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logo-container {
+    position: absolute; 
+    top: 20px;
+    right: 20px; 
+    z-index: 10; 
+}
+
+.logo {
+    height: 50px;
+    width: auto; 
+}
+
+/* End of navbar format */
+
+/* Hover effects to the card */
+.image-item:hover {
+    transform: scale(1.05); 
+}
+
+
+.image-item img {
+    width: 100%; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.image-item:hover img {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+/* End of hover effect for the card sliders */
+/* Description format for the card slider menu thing */
+.description {
+    text-align: center; 
+    margin-top: 5px; 
+}
+
+.description h3 {
+    margin: 5px 0; 
+}
+
+.description p {
+    margin: 5px 0; 
+    font-size: 0.9em; 
+}
+
+/* End of description format card slider */
+/* Header format */
+header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;;
+}
+/* End of header format */
+/* Title format */
+.title-box {
+    background-color: rgba(33, 184, 66, 0.8); 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2em; 
+    color: #2ecc71; 
+    transition: all 0.3s ease; 
+}
+
+.hero-content p {
+    font-size: 0.8em; 
+}
+/* End of title format */
+/* Title format when scrolling */
+.hero-content.scrolled h1 {
+    font-size: 2em;
+    color: #e74c3c; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1); 
+}
+/* Reservation or delivery format */
+.reservation-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #A3D8A8; 
+}
+/* Selection format */
+.selection-container {
+    position: relative;
+    background-color: #8BBF8C; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex-grow: 1;
+}
+/* Hide the content */
+.hidden {  
+    display: none;  
+ }  
+   /* Format of clickable image */
+.clickable-image {
+    width: 150px;  
+    height: 150px;  
+    border-radius: 40%;  
+    cursor: pointer;  
+    transition: transform 0.2s ease-in-out;  
+}
+/* Responsive format for small screen  */
+@media (max-width: 600px) {
+    .clickable-image {
+        width: 70%; 
+        max-width: 100%; 
+    }
+}
+
+   /* Hover effect to image that is clickable */
+ .clickable-image:hover {  
+    transform: scale(1.1);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+ }  
+   /* Popup */
+ #popup {  
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    background: green;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  
+    z-index: 100;  
+    color: white;  
+ }  
+   /* Popup */
+ .popup-content {  
+    position: relative;  
+ }  
+   /* Close */
+ .close {  
+    position: absolute;  
+    top: 5px;  
+    right: 10px;  
+    cursor: pointer;  
+    font-size: 24px;  
+    color: white;  
+ }  
+   /* Option button format */
+ .option-button {  
+    background-color: red;  
+    color: white;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+ }  
+ /* Hover effect */
+   
+ .option-button:hover {  
+    background-color: #ff3333;  
+ }
+ /* End of reservation or delivery format */
+/* Footer infinite format */
+ .footer {
+    background-color: black; 
+    color: #A3D8A8; 
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%; 
+}
+/* Part of footer infinite format */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite; 
+}
+
+.marquee-content {
+    display: inline-flex;
+}
+
+.marquee span {
+    margin-right: 50px; 
+    font-size: 16px; 
+    color: #A3D8A8; 
+    font-family: "Orbitron", serif; 
+}
+/* End of infinite format */
+
+/* Scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Social media format */
+.social-media {
+    margin-top: 10px; 
+}
+
+.social-media a {
+    margin: 0 15px; 
+}
+
+.social-media img {
+    width: 40px; 
+    height: auto; 
+}
+/* End of social media format */
+/* Text for title */
+.animated-text {
+    background: #A3D8A8;
+    padding: 20px; 
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.text-box {
+    background: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+/* Text format */
+h1 {
+    color: #3C3C3C;
+    font-size: 2.5em; 
+    margin: 0; 
+}
+/* Text format */
+p {
+    color: #3C3C3C;
+    font-size: 1.2em; 
+    margin-top: 10px; 
+}
+/* Responsive for the text format */
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.2em; 
+    }
+
+    .hero-content p {
+        font-size: 0.7em; 
+    }
+}

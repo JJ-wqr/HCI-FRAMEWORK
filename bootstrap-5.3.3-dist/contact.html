@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font format -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <!-- java script for navbar and chat -->
+    <script src="sidebar.js"></script>
+    <script src="contact.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- Sidebar Navigation -->
+     <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">Close</button>
+        <h2>Explore Shreklacious</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="job.html">Job Application</a>
+        <a href="menu.html">Shrek Menu</a>
+    </div>
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="openSidebar()">☰ Discover</button>
+    
+</head>
+<!-- chat html -->
+    <div class="chat">
+        <div class="chat-title">
+          <h1>ShrekBos</h1>
+          <h2>TheLegendHIMSELF!</h2>
+          <figure class="avatar">
+            <img src="majestic.png" /></figure>
+        </div>
+        <div class="messages">
+          <div class="messages-content"></div>
+        </div>
+        <div class="message-box">
+          <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+          <button type="submit" class="message-submit">Send</button>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <!-- end of chat html -->
+</body>
+</html>

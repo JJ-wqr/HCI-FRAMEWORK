@@ -1,0 +1,111 @@
+/* body format */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: "Orbitron", serif;
+    background: url(green.jpg);
+    background-size: 100%;
+  }
+  
+  /* chat format */
+  .chat {
+    width: 360px; 
+    height: 640px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  /* chat title format */
+  .chat-title {
+    padding: 20px;
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  
+  .chat-title h1, .chat-title h2 {
+    margin: 0;
+  }
+  /* end of chat title foramt */
+  /* chat format and avatar image format */
+  .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #e5ddd5;
+  }
+  
+  .message-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .message-submit {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .message-submit:hover {
+    background: #45a049;
+  }
+  
+  .message {
+    display: flex;
+    margin: 5px 0;
+  }
+  
+  .message.sent {
+    justify-content: flex-end;
+  }
+  
+  .message.received {
+    justify-content: flex-start;
+  }
+  
+  .message p {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .message.received p {
+    background: #ddd;
+    color: #333;
+  }
+  /* end of chat format and image forrmat */

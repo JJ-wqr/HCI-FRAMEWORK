@@ -1,0 +1,85 @@
+/* Menu body format */
+body {
+    font-family: "Orbitron", serif;
+    background-color: #b0e57c; 
+    color: #4e4e4e; 
+    margin: 0;
+    padding: 0;
+}
+/* Header format */
+header {
+    text-align: center;
+    background-color: #193a12; 
+    color: rgb(22, 211, 28);
+    padding: 20px;
+}
+/* TEXT FORMAT */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+/* MENU FORMAT */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+/* cARD FORMAT */
+.card {
+    background-color: white;
+    border: 2px solid #4e4e4e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05);
+}
+/* Image format for card */
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* Footer format */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(101, 181, 76);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive format for smaller device */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+/* Responsive format for smaller device */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+/* Card format */
+    .card {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,89 @@
+/* side bar format */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #025b04; 
+    overflow-x: hidden;
+    transition: width 0.5s ease; 
+    padding-top: 60px;
+    color: #fff;
+    z-index: 1000; 
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1c40f; /* Shrek-themed yellow color */
+    display: block;
+    transition: background-color 0.3s;
+}
+/* background when open */
+.sidebar a:hover {
+    background-color: #06b73b; 
+}
+
+.sidebar h2 {
+    padding-left: 15px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; 
+}
+
+/* side bar open */
+.sidebar-open {
+    width: 250px;
+}
+
+/* responsive format for mobile device */
+@media (max-width: 100px) {
+    .sidebar {
+        width: 0;
+    }
+    
+    .sidebar-open {
+        width: 100%; 
+    }
+    
+    .sidebar a {
+        font-size: 16px; 
+    }
+    
+    .open-btn {
+        font-size: 18px;
+        padding: 8px 12px; 
+    }
+}
+/* responsive format small device */
+@media (max-width: 480px) {
+    .sidebar a {
+        font-size: 14px; 
+    }
+}

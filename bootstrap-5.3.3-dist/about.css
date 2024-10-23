@@ -1,0 +1,98 @@
+/* Body format */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: "Orbitron", serif;
+    background: url(green.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/* Card format */
+.card {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+/* Hover effect format */
+.card:hover {
+    transform: scale(1.05);
+}
+/* Card image format */
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+/* Card description format */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+/* End of card description format */
+/* button to head home page format */
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0bbd67;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* home button hover effect */
+.home-button:hover {
+    background-color: #00b32a;
+}
+
+/* responsiveness format for smaller device */
+@media (max-width: 768px) {
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+    }
+
+    .home-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .home-button {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+}
+/* end of responsiveness for smaller device */
